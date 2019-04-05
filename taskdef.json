@@ -1,0 +1,15 @@
+{
+	"family": "demo",
+	"containerDefinitions": [{
+		"image": "%REPOSITORY_URI%:%LATEST_DOCKER_IMAGE%",
+		"name": "demo",
+		"cpu": 10,
+		"memory": 256,
+		"essential": true,
+		"portMappings": [{
+			"containerPort": 8181,
+			"hostPort": 8181
+		}],
+		
+	}]
+}
